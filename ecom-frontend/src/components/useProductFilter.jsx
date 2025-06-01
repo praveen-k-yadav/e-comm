@@ -14,6 +14,7 @@ useEffect(()=>{
     const currentPage = searchParams.get("page")
     ?Number(searchParams.get("page"))
     :1;
+
     params.set("pageNumber",currentPage-1);
     const sortOrder = searchParams.get("sortby") || "asc";
     const categoryParams = searchParams.get("category") || null;
